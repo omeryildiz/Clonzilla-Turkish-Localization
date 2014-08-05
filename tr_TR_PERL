@@ -127,16 +127,16 @@ $lang_charset = 'iso-8859-1';
    client_text_mode => "Boot edildiğinde, istemciler text modu kullanacaklar.",
    client_graphic_mode => "İstemciler baştan başlatma işleminden sonra grafik moda girecek.",
    login_mode_for_client =>
-                  "Which mode do you want when client boots in graphic mode?\n".
+                  "İstemci grafiksel olarak baştan başlatıldıktan sonra hangi modu istersiniz?\n".
                   "0: normal login, 1: auto login, 2: timed login",
-   auto_login => "The clients will auto login when they boot.",
+   auto_login => "İstemciler boot edildiklerinde auto login olacaklar.",
    created_account_for_auto_login =>
-                      "accounts will be created for the client machines to auto login.\n".
-		      "The auto login ID is same as the hostname of client.\n".
-                      "The information of accounts and password will be listed in file",
-   time_for_countdown => "How many seconds for countdown?",
-   timed_login_prompt => "The clients will auto login if timed after",
-   normal_login_prompt => "The clients will wait for user to login when they boot.",
+                      "auto login için istemci makinelerinin hesaplar oluşturulacak.\n".
+		      "auto login ID istemcinin host ismiyle aynıdır.\n".
+                      "Hesap ve parola bilgileri dosya içinde listelenecek",
+   time_for_countdown => "Geri sayımın saniyesi kaç?",
+   timed_login_prompt => "Zaman dolduktan sonra istemciler auto login yapacaklar.",
+   normal_login_prompt => "İstemciler boot edildiklerinde kullanıcıların login olması için bekleyecekler.",
    keep_client_setting_question => "Do you want to keep the old setting of existing DRBL clients if they exist?",
    remove_client_setting => "We will remove all the setting of the DRBL clients if they already exist.",
    keep_client_setting => "We will try to keep the setting of the DRBL clients if they already exist.",
