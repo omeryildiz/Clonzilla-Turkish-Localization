@@ -15,7 +15,7 @@ $lang_charset = 'iso-8859-1';
 
 %lang_text =
    (  
-   Say        => 'Say',
+   Say        => 'Söyle',
    or         => 'veya',
    seconds    => 'saniye',
    WARNING    => 'UYARI',
@@ -23,7 +23,7 @@ $lang_charset = 'iso-8859-1';
    as         => 'olarak',
    login      => 'giriş',
    clear      => 'temizle',
-   of         => '',
+   of         => 'nun',
    logout     => 'çıkış',
    page       => 'sayfa',
    move       => 'taşı',
@@ -35,7 +35,7 @@ $lang_charset = 'iso-8859-1';
    download   => 'indir',
    cancel     => 'iptal',
    continue   => 'devam et',
-   for        => 'for',
+   for        => 'için',
    save       => 'kaydet',
    add        => 'ekle',
    delete     => 'sil',
@@ -48,7 +48,7 @@ $lang_charset = 'iso-8859-1';
 %lang_word =
    (
    please_enter => "Lütfen giriniz",
-   to_deploy_them => "to deploy them",
+   to_deploy_them => "onları yerleştirmek",
    root_passwd => "root\'s parolası",
    initial_digit => "ilk basamak",
    unable_to_find_the => "bulamadı",
@@ -57,38 +57,38 @@ $lang_charset = 'iso-8859-1';
 
 %lang_deploy =
    (
-   interactive_mode_prompt => 'The interactive mode let you supply the information of your DRBL environment.',
-   domain_unset_prompt => 'DOMAIN is unset, please enter DOMAIN now:',
-   domain_prompt => 'Please enter DNS domain (such as drbl.sf.net):',
-   nisdomain_unset_prompt => 'NISDOMAIN is unset, please enter NISDOMAIN now:',
-   nisdomain_prompt => 'Please enter NIS/YP domain name:',
-   not_allowed_domainname => 'is not allowed as a DOMAINNAME, enter it again!',
-   not_allowed_nisdomainname => 'is not allowed as a NISDOMAINNAME, enter it again!',
-   set_domain_as => 'Set DOMAIN as',
-   enter_client_hostname_prefix => "Please enter the client hostname prefix:\nThis prefix is used to automatically create hostname for clients. If you want to overwrite some or all automatically created hostnames, press Ctrl-C to quit this program now, edit /etc/drbl/client-ip-hostname, then run this program again.",
-   not_allowed_hostname => 'is not allowed as a client hostname prefix, enter it again!',
-   set_client_hostname_prefix => 'Set the client hostname prefix as',
-   no_NIC_setup => 'You did NOT setup any Internet network setting for the network cards for clients (such as the IP address of eth1, eth2...), or something wrong!',
-   configured_nic => 'Configured ethernet card(s) found in your system:',
-   we_can_NOT_continue => 'We can NOT continue...',
+   interactive_mode_prompt => 'İnteraktif mod sizin DRBL ortamınızın bilgisini sağlamanıza izin verir.',
+   domain_unset_prompt => 'DOMAIN ayarlı değil, lütfen domain giriniz:',
+   domain_prompt => 'Lütfen DNS domaini giriniz (drbl.sf.net gibi):',
+   nisdomain_unset_prompt => 'NISDOMAIN ayarlı değil, lütfen NISDOMAIN giriniz:',
+   nisdomain_prompt => 'Lütfen NIS/YP domain adını giriniz:',
+   not_allowed_domainname => 'DOMAINNAME olarak kullanılamaz, lütfen tekrar giriniz!',
+   not_allowed_nisdomainname => 'NISDOMAINNAME olarak kullanılamaz, tekrar giriniz!',
+   set_domain_as => 'Domain olarak şunu',
+   enter_client_hostname_prefix => "Lütfen istemci bilgisayar adının ön ekini giriniz:\nBu ön ad istemciler için bilgisayar adı oluşturmak için otomatik olarak kullanılmıştı. Otomatik olarak oluşturulan bazı adları veya hepsini silmek istiyorsanız, bu programdan çıkmak için şimdi Ctrl-C tuşuna basınız, /etc/drbl/client-ip-hostname dosyasını düzenleyiniz, daha sonra bu programı tekrar çalıştırınız.",
+   not_allowed_hostname => 'istemci adı ön eki olarak izin verilmedi, tekrar giriniz!',
+   set_client_hostname_prefix => 'İstemci adı ön eki olarak ayarla',
+   no_NIC_setup =>  ' Internet bağlantı ayarlarını yapmadınız veya bir şeyler yanlış gitti!',
+   configured_nic => 'Sisteminizde ayarlanmış ethernet kart ayarları bulundu:',
+   we_can_NOT_continue => 'Devam edemeyiz...',
    but_not_private_IP_or_configured => 'but it\'s not private IP, not well configured, or not up now!!!',
-   enter_public_IP_for_the_client => "Enter the public IP for this client",
-   its_IP_in_DRBL_is => "Its IP in DRBL is",
-   wrong_entered_IP => "The IP you entered is wrong, please enter it again!",
-   enter_gateway_for_client => "Enter the gateway for this client",
-   enter_netmask_for_client => "Enter the netmask for this client",
-   wrong_entered_netmask => "The NETMASK you entered is wrong, please enter it again!",
-   set_client_public_IP_as => "We will set clients' public IP addresses network parameters as:",
-   we_will_skip => 'We will skip',
-   for_internet_access_prompt => 'Which ethernet port in this server is for public Internet accsess, not for DRBL connection?',
-   drbl_website_prompt => 'See http://drbl.nchc.org.tw/redhat or http://drbl.sf.net/redhat for details.',
-   ethernet_port_for_internet => 'The ethernet port for Internet access is:',
-   ethernet_port_for_DRBL => 'The ethernet port(s) for DRBL environment: ',
-   only_1_IP_for_eth0 => 'Only 1 IP address for eth0, we will not use eth0 for DRBL environment!',
-   no_DRBL_port => 'No ethernet port is available for DRBL environment!',
-   saved_mac_address_files_in_etc => "These files are saved in directory $drbl_syscfg.",
+   enter_public_IP_for_the_client => "Bu istemci için public IP giriniz",
+   its_IP_in_DRBL_is => "DRBL deki IP",
+   wrong_entered_IP => "Girdiğiniz IP hatalı, lütfen tekrar deneyin!",
+   enter_gateway_for_client => "Bu istemci için ağ geçidi giriniz",
+   enter_netmask_for_client => "Bu istemci için alt ağ maskesi giriniz",
+   wrong_entered_netmask => "Alt ağ maskesini hatalı girdiniz. Lütfen tekrar deneyin!",
+   set_client_public_IP_as => "İstemcinin network parametrelerini şu şekilde ayarlayacağız: ",
+   we_will_skip => 'Geçeceğiz',
+   for_internet_access_prompt => 'DRBL bağlantısı için olmayan, genel internet adresi için olan bu sunucudaki hangi ethernet portudur? ',
+   drbl_website_prompt => 'Detaylar için http://drbl.nchc.org.tw/redhat veya http://drbl.sf.net/redhat adreslerine bakınız.',
+   ethernet_port_for_internet => 'Internet erişimi için ethernet portu:',
+   ethernet_port_for_DRBL => 'DRBL ortamı için ethernet portu: ',
+   only_1_IP_for_eth0 => 'eth0 için sadece 1 IP adresi, DRBL ortamı için eth0 kullanmayacağız!',
+   no_DRBL_port => 'DRBL ortamı için uygun ethernet portu yok!',
+   saved_mac_address_files_in_etc => "Bu dosyalar $drbl_syscfg dizininde kaydedildi.",
    collect_MAC_prompt => 
-          "Now we can collect the MAC address of clients!\n".
+          "Şimdi istemcilerin MAC adreslerini toplayabiliriz!\n".
           "If you want to let the DHCP service in DRBL server offer same IP address to client every time when client boot, and you never did this procedure, you should do it now!\n".
           "If you already have those MAC addresses of clients, you can put them into different group files (These files number is the same number of networks cards for DRBL service). In this case, you can skip this step.\n".
           "This step helps you to record the MAC addresses of clients, then divide them into different groups. It will save your time and reduce the typos.\n".
@@ -96,36 +96,36 @@ $lang_charset = 'iso-8859-1';
 	  "and they will be put into different files according to the network card in server, file name will be like macadr-eth1.txt, macadr-eth2.txt... You can find them in directory $drbl_syscfg.\n".
 	  "Please boot the clients by order, make sure they boot from etherboot or PXE!\n". 
           "Do you want to collect them?",
-   ok_let_do_it => 'OK! Let\'s do it!',
-   you_are_not_root => 'You are not root',
-   ok_let_continue => 'OK! Let\'s continue...',
+   ok_let_do_it => 'Tamam! Hadi yap şunu!',
+   you_are_not_root => 'Root değilsin',
+   ok_let_continue => 'TAMAM! Hadi devam et...',
    fix_eth_IP_prompt => "Do you want to let the DHCP service in DRBL server offer same IP address to the client every time when client boots (If you want this function, you have to collect the MAC addresses of clients, and save them in file(s) (as in the previous procedure)). This is for the clients connected to DRBL server's ethernet network interface",
-   MAC_file_prompt => "OK! Please tell me the file name which contains the MAC address of clients line by line for",
-   range_prompt => "OK! Let's continue, we will set the IP address of clients by \"first boot gets IP first\" instead of fixed one!",
-   client_number_connected_to_eth => "How many DRBL clients (PC for students) connected to DRBL server's ethernet network interface",
-   enter_the_no => "Please enter the number",
-   the_value_you_set => "The final number in the last set of digits in the client's IP address is",
-   set_the_IP_connected_to_eth => "We will set the IP address for the clients connected to DRBL server's ethernet network interface",
-   do_you_want_to_continue => "Do you want to continue?",
-   reenter_or_accept => "to re-enter it, or any other letter to accept this value and go on!",
-   filename_you_set => "The file name you set is",
+   MAC_file_prompt => "Tamam! Lütfen bana istemcilerin MAC adreslerini satır satır içeren dosya adını söyle",
+   range_prompt => "Tamam! Devam et, Sabit bir ip yerine ilk boot yapılırken IP aldırarak istemcilerin IPlerini ayarlayacağız!",
+   client_number_connected_to_eth => "DRBL sunucunun ethernet ağ arayüzüne bağlı kaç tane DRBL istemcisi var?",
+   enter_the_no => "Lütfen sayı giriniz",
+   the_value_you_set => "İstemcinin IP adresindeki basamakların son kümesindeki final sayısı",
+   set_the_IP_connected_to_eth => "DRBL sunucunun ethernet arayüzüne bağlı olan istemciler için IP adresleri ayarlayacağız",
+   do_you_want_to_continue => "Devam etmek istiyor musunuz?",
+   reenter_or_accept => "tekrar enter tuşuna bas, veya bu değeri kabul etmek için herhangi bir tuşa bas ve devam et!",
+   filename_you_set => "Ayarladığınız dosya adı",
    by_MAC_file => "By the MAC address file you set, the IP addresses for the clients connected to DRBL server's ethernet network interface",
-   let_restart_it_again => "OK, let's restart it again!",
-   layout_for_DRBL => "The Layout for your DRBL environment:",
+   let_restart_it_again => "Tamam! hadi onu tekrar baştan başlat!",
+   layout_for_DRBL => "Sizin DRBL ortamınız için düzen:",
    swap_prompt =>
-              "If there is a local harddrive with swap partition or writable file system in your client machine,\n".
-              "do you want to use that swap partition or create a swap file in  the writable filesystem so that client has more memory to use? (This step will NOT destroy any data in that harddisk)",
+              "Sizin istemci makinenizde yerel harddiskle birlikte swap alanı veya yazılabilir dosya sistemi  varsa,\n".
+              "swap alanını kullanmak veya yazılabilir dosya sisteminde bir swap alanı oluşturmak ister misiniz böylelikle istemci daha fazla hafızaya sahip olur? (Bu adım harddiskteki hiçbir bilgiye zarar vermeyecek)",
    try_to_create_swap =>
-                "OK! We will try to create a swap space for your client if it has a local hard drive!",
+                "TAMAM! İstemcinizde yerel harrdisk varsa swap alanı oluşturmayı deneyeceğiz!",
    max_swap_size =>
-                "What's the maximun size (Megabytes) for the swap space?\n".
-                "We will try to allocate the swap space for you, if it's not enough, 60% of the free space will be used.",
+                "Swap alanı için maksimum boyut nedir(Megabyte olarak)\n".
+                "Swap alanı ayırmayı deniyoruz, yeterli değilse, boş alanın %60 ı kullanılacak.",
    mode_for_client_init =>
-              "Which mode do you want the clients to use after they boot?\n".
-              "\"1\": Graphic mode (X window system) (default),\n".
-              "\"2\": Text mode.",
-   client_text_mode => "The clients will use text mode when they boot.",
-   client_graphic_mode => "The clients will enter graphic mode after booting.",
+              "Boot edildikten sonra hangi modu kullanmak istersiniz?\n".
+              "\"1\": Grafik mod (X pencere sistemi) (varsayılan),\n".
+              "\"2\": Text mod.",
+   client_text_mode => "Boot edildiğinde, istemciler text modu kullanacaklar.",
+   client_graphic_mode => "İstemciler baştan başlatma işleminden sonra grafik moda girecek.",
    login_mode_for_client =>
                   "Which mode do you want when client boots in graphic mode?\n".
                   "0: normal login, 1: auto login, 2: timed login",
