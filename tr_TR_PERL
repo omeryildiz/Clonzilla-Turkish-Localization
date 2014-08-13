@@ -137,117 +137,117 @@ $lang_charset = 'iso-8859-1';
    time_for_countdown => "Geri sayımın saniyesi kaç?",
    timed_login_prompt => "Zaman dolduktan sonra istemciler auto login yapacaklar.",
    normal_login_prompt => "İstemciler boot edildiklerinde kullanıcıların login olması için bekleyecekler.",
-   keep_client_setting_question => "Do you want to keep the old setting of existing DRBL clients if they exist?",
-   remove_client_setting => "We will remove all the setting of the DRBL clients if they already exist.",
-   keep_client_setting => "We will try to keep the setting of the DRBL clients if they already exist.",
-   set_client_root_passwd => "Do you want to set the root's password for clients instead of using same root's password copied from server? (For better security)",
-   whats_client_root_passwd => "New root's password for clients (It will not be echoed in the screen)?",
-   set_client_pxelinux_passwd => "Do you want to set the pxelinux password for clients so that when client boots, a password must be entered to startup (For better security)",
-   whats_client_pxelinux_passwd => "New pxelinux password for clients (It will not be echoed in the screen)?",
-   retype_root_passwd => "Retype new password (It will not be echoed in the screen).",
-   sorry_passwd_not_match => "Sorry, passwords do not match",
-   sorry_passwd_can_not_empty => "Sorry, password can not be empty",
+   keep_client_setting_question => "Eğer versa DRBL istemcinin eski ayarlarını korumak ister misiniz?",
+   remove_client_setting => "Eğer çoktan varsa DRBL ayarlarının hepsini kaldıracağız.",
+   keep_client_setting => "Eğer varsa DRBL istemcilerinin ayarlarını komayı deneyeceğiz.",
+   set_client_root_passwd => " root parolası ayarlamak yerine sunucudan aynı kopyalanmış root parolası kullanmak ister misiniz? (Daha fazla güvenlik için)",
+   whats_client_root_passwd => "İstemciler için root parolası (Ekranda gösterilmeyecek)?",
+   set_client_pxelinux_passwd => "İstemciler için pxelinux parolası ayarlamak ister misiniz? İstemci boot ettiğinde, başlamak için parola girilmelidir.(Daha fazla güvenlik sağlar)",
+   whats_client_pxelinux_passwd => "İstemciler için yeni pxelinux parolası nedir?(Ekrana yansıtılmayacaktır)",
+   retype_root_passwd => "Parolayı tekrar giriniz(Ekrana yansıtılmayacaktır).",
+   sorry_passwd_not_match => "Üzgünüz, parolalar birbirleriyle eşleşmediler",
+   sorry_passwd_can_not_empty => "Üzgünüz, parola kısmı boş bırakılamaz",
    set_client_alias_IP =>
-      "By using alias interface, every client can have 2 IPs,\n".
-      "one of them is private IP for clients connected to DRBL server, and the other is public IP for clients directly connected to WAN from switch!\n".
-      "Do you want to setup public IP for clients?",
-   searching_installed_drbl_packages => "Searching the installed packages for DRBL server...This might take several minutes...",
+      "Her istemci arayüz takma adı kullanarak iki Ip sahibi olabilir,\n".
+      "Birisi DRBL sunucuya bağlanmak için istemciler için özel olan ip, diğeri switch üzerinden ağa doğrudan bağlanmak için kullanılan genel ip!\n".
+      "İstemciler için genel ip ayarlamak ister misiniz?",
+   searching_installed_drbl_packages => "DRBL sunucusu için kurulmuş paketler aranıyor...Bu birkaç dakika alabilir...",
    no_drbl_server_package_found =>
-	      "No DRBL server package is installed!!!\n". 
-	      "You should run another script (drblsrv -i) to setup the DRBL server first!!!, Otherwise the system will NOT work!!!\n".
-	      "Are you sure you want to continue? Say \"yes\" or \"y\" to continue, or any other letter to quit!",
-   but_you_will_see_errors => "But you will see a lot of error messages...!!!",
-   smart_decision => "OK, smart decision, I will quit now!",
-   finished_searching_installed_drbl_packages => "Finished searching the installed packages for DRBL server.",
+	      "Kurulmuş DRBL sunucusu paketi yok!!!\n". 
+	      "İlk olarak bir başka script olan(drblsrv -i) komutunu DRBL sunucusunu ayarlamak için kullanmalısınız !!!, Yoksa sistem çalışmaz!!!\n".
+	      "Devam etmek istediğinize emin misiniz?  Devam etmek için \"yes\" veya \"y\" , çıkmak için herhangi bir tuşa basınız!",
+   but_you_will_see_errors => "Çok fazla hata mesajı göreceksiniz...!!!",
+   smart_decision => "Tamam, akıllıca bir karar verdiniz, Şimdi çıkıyorum!",
+   finished_searching_installed_drbl_packages => "DRBL sunucu için kurulmuş paketleri aramyı bitirdi.",
    note_for_keep_client_setting => "Note! You are trying to keep the setting of DRBL clients if they exist, sometimes DRBL clients will go wrong when you finish this script! If so, rebooting those DRBL clients should make them work!",
-   press_enter_to_continue => "Press Enter to continue... ",
+   press_enter_to_continue => "Devam etmek için Enter tuşuna basınız... ",
    no_deploy_prompt =>
-	      "All config files are created in this working directory,\n".
-	      "but they are NOT deployed to system! \n".
-	      "If you want to deploy them to system, do not use option \"-n\" or \"--no_deploy\"",
+	      "Bütün ayar dosyaları bu çalışma dizininde oluşturulur,\n".
+	      "ama sisteme yerleştirilmezler! \n".
+	      "Eğer sisteme yerleştirmek istiyorsanız, \"-n\" veya \"--no_deploy\" seçeneklerini kullanmayın",
    ready_to_deploy =>
-	      "We are now ready to deploy the files to system! \n".
-	      "Do you want to continue?",
-   overwrite_firewall_rule => "Warning! If you go on, your firewall rules will be overwritten during the setup!",
-   backup_firewall_rule => "The original rules will be backuped as iptables.drblsave in system config directory (/etc/sysconfig or /etc/default).",
-   oh_quit_now => "Oh, I will quit now!",
-   accept_or_enter => "Say \"Y\" to accept or other letter to enter each one by one...",
-   failed_to_open_file => "Failed to open file",
+	      "We are now ready to deploy the files to system! Dosyalarınızı sisteme yerleştirmek için hazırız \n".
+	      "Devam etmek istiyor musunuz?",
+   overwrite_firewall_rule => "Uyarı! Eğer devam ederseniz firewall kurallarınız ayarlama sırasında silinecektir!",
+   backup_firewall_rule => "Orjinal kurallar iptables.drblsave dosyası olarak, sistem ayar dosyası içine (/etc/sysconfig veya /etc/default) yedeklenecektir.",
+   oh_quit_now => "Tüh, Şimdi çıkacağım,inşallah!",
+   accept_or_enter => " Kabul etmek için \"Y\" tuşuna veya tek tek girmek için herhangi bir tuşa basınız...",
+   failed_to_open_file => "Dosya açma işlemi başarısız",
    #
-   analyzing_rpm_info => "Analyzing the rpm packages info... This might take several minutes...",
-   no_drbl_server_package => "No DRBL server package is installed!!!",
-   apt_pkg_not_installed =>  "\"apt\" package is NOT installed!!!", 
-   we_are_now_ready_to => "We are now ready to",
-   the_files_for_DRBL_server => "the files for DRBL server!",
-   say_yes_to_continue_other_to_quit => "Say \"yes\" or \"y\" to continue, or any other letter to quit!",
-   say_no_to_quit_other_to_continue => "Say \"no\" or \"n\" to quit, or any other letter to continue!",
-   syncing_flush => "Now syncing - flush filesystem buffers...", 
-   install_and_upgrade => "install and upgrade",
-   IP_start_prompt => "What is the initial number do you want to use in the last set of digits in the IP (i.e. the initial value of d in the IP address a.b.c.d) for DRBL clients connected to this ethernet port",
-   client_no_in_MAC_file => "The clients number in this file is",
-   not_initial_value => "The one you input in NOT valid for initial value! Please enter it again!!!",
-   can_not_be_the_last_IP => "can NOT be the last set of digits in IP!!!",
-   can_not_be_the_first_IP => "can NOT be the first set of digits in IP!!!",
-   set_client_system_select => "Do you want to set the boot prompt for clients?",
-   use_graphic_pxelinux_menu => "Do you want to use graphic background for PXE menu when client boots?",
-   note_for_use_graphic_pxelinux_menu => "Note! If you use graphical PXELinux menu, however client fails to boot, you can switch to text mode by running \"switch-pxe-bg-mode -m text\".",
-   whats_client_system_boot_timeout => "How many 1/10 sec is the boot prompt timeout for clients?",
-   sorry_timeout_must_be_number => "The timeout must be a number (say 70)!!!",
-   unable_to_get_ethx_IP => "Unable to get the IP address!!!\ You must set a static class C private IP address (such as 192.168.1.1), and it can NOT be a floating IP address (like DHCP client)! This error is on network card:",
-   program_stop => "Program stop!!!",
+   analyzing_rpm_info => "rpm paket bilgileri analiz ediliyor... Bu birkaç dakika alabilir...",
+   no_drbl_server_package => "Kurulmuş DRBL sunucu paketi yok!!!",
+   apt_pkg_not_installed =>  "\"apt\" paketi kurulmamış!!!", 
+   we_are_now_ready_to => "Şimdi gitmeye hazırız",
+   the_files_for_DRBL_server => "DRBL sunucu için dosyalar!",
+   say_yes_to_continue_other_to_quit => "Devam etmek için \"yes\" veya \"y\" , veya çıkmak için herhangi bir tuşa basınız!",
+   say_no_to_quit_other_to_continue => " Çıkmak için \"no\" veya \"n\" tuşuna , veya devam etmek için herhangi bir tuşa basınız!",
+   syncing_flush => "Şimdi eşitleniyor - dosya sistem bufferı boşaltılıyor...", 
+   install_and_upgrade => "kur ve güncelle",
+   IP_start_prompt => "Bu ethernet portuna DRBL istemcilerinin bağlanması için IP adresinin en sonundaki basamak kümesi için kullanmak istediğin başlangıç numarası nedir (a.b.c.d gibi bir IP adresinde d harfinin yerine gelecek değer)?",
+   client_no_in_MAC_file => "Bu dosyadaki istemci numaraları ",
+   not_initial_value => "Geçerli bir değer girmediniz! Lütfen tekrar deneyiniz!!!",
+   can_not_be_the_last_IP => "değeri bir ip adresinin son basamağı olamaz!!!",
+   can_not_be_the_first_IP => "değer bir ip adresinin ilk basamağı olamaz!!",
+   set_client_system_select => " İstemciler için boot istemi ayarlamak ister misiniz?",
+   use_graphic_pxelinux_menu => "İstemci boot ettiğinde PXE menu için grafik arkaplan kullanmak ister misiniz?",
+   note_for_use_graphic_pxelinux_menu => "Uyarı! Eğer grafik PXELinux menu kullanırsanız, istemcinin boot işlemi başarısız olmasına rağmen, \"switch-pxe-bg-mode -m text\" komutunu çalıştırarak, text moda değiştirebilirsiniz.",
+   whats_client_system_boot_timeout => " İstemciler için kaç 1/10 saniyede boot istemi zaman aşımına uğramalıdır?",
+   sorry_timeout_must_be_number => "Zaman aşımı bir sayı olmalıdır (70 gibi)!!!",
+   unable_to_get_ethx_IP => " Ip adresi almak olanaksız!!!\ C sınıfı sabit özel ip ayarlamalısınız (192.168.1.1 gibi), ve kayan noktalı ip adresi olamaz (DHCP istemcisi gibi)! Bu hata network kartınızdadır:",
+   program_stop => "Program Duruyor!!!",
    open_thin_client_option => 
-        "Do you want to let DRBL clients have an option to run terminal mode? i.e. you want to let that client run remote display (which will mostly use resources of server), say \"Y\" here.\n".
-        "Note!\n".
-	"0. If you say yes to this option, this will be a very limited environment for client, i.e. NO local access for USB, CD, audio, printer, etc. in client.\n".
-	"1. If your server is not powerful, say \"no\" here.\n".
-	"2. By saying \"yes\" here, we will turn on xdmcp,\n".
-	"It is never a safe thing to turn on that.  Setting up /etc/hosts.allow and /etc/hosts.deny to only allow local access is another alternative but not the safest.\n".
-	"Firewalling port 177 is the safest if you wish to have xdmcp on.\n".
-	"Read the manual for more notes on the security of XDMCP.\n".
-	"Please set it by yourself!\n".
-	"3. If you say \"yes\" here, you might have to restart your desktop environment manager (gdm/kdm) later, remember to save your data before you close applications!\n".
-	"Do you want to let client has an option to run terminal mode?",
+        "DRBL istemcilerine terminal modda çalıştırmak için seçenek sunmak ister misiniz? Yani uzak ekran istemciye izin vermek istiyorsanız (server kaynaklarının çoğunu kullanacak), buraya \"Y\" yazın .\n".
+        "Uyarı!\n".
+	"0. Bu seçeneğe evet diyorsanız, istemci için kısıtlı bir ortam olacaktır, örneğin istemcide USB, CD, ses, printer gibi aygıtlara erişim olmayacak vb..\n".
+	"1. Sunucunuz güçlü değilse, buraya \"no\" yazın.\n".
+	"2. Buraya \"yes\" demekle,  xdmcp ye döndüreceksiniz,\n".
+	"Şuna çevirmek güvenli bir şey değildir.  /etc/hosts.allow ve /etc/hosts.deny dosyalarını ayarlamak sadece local adreslere izin veren başka bir alternatiftir fakat en güvenlisi değildir.\n".
+	"xdmcp açmayı umuyorsanız port 177 için Firewall kullanmak en güvenli yoldur.\n".
+	" XDMCP güvenliğinde daha fazla bilgi almak için klavuzu okuyun.\n".
+	"Lütfen, kendiniz ayarlayın!\n".
+	"3. Eğer burada \"yes\" diyorsanız, daha sonra masaüstü yöneticisini baştan başlatmalısınız, Uygulamaları kapatmadan önce bilgilerinizi kaydetmeyi unutmayın!\n".
+	"Terminal modda çalışmak için istemciye seçenek sunmak ister misiniz?",
    server_kernel_nfsd_support => "The running kernel in the server supports",
-   change_kernel_notes => "Note! If you change the running kernel in the server, and not sure whether the kernel supports NFS over udp or tcp, you'd better to re-run \"drblpush -i\" again to avoid the client boots in failure!",
-   hint_for_answer => "Hint! When a yes/no option is available, the default value is uppercase, Ex. (y/N), the default is \"N\", when you press \"Enter\", it will use \"N\". If you are not sure which one to choose, you can just press \"Enter\" key.",
-   hint_for_detect_MAC => "If you want use the static IP address for DRBL clients, you must run \"drblpush\" in interactive mode (with -i option) and collect the MAC addresses of clients!",
-   illegal_char_in_MAC => "The MAC address files contain illegal character",
-   fix_wrong_MAC_file => "Please check and modify the MAC address file you entered.",
-   unable_to_find_public_IP => "The public IP address of this server is NOT found.",
-   available_eth_ports => "Available ethernet ports in this server",
-   is_not_in_the_lists => "is not in the lists",
-   enter_it_again => "Please enter it again",
-   the_eth_port_you_choose_for_wan => "The ethernet port you choose for the WAN connection",
-   set_DBN_client_audio_plugdev_etc_open_to_all => "Do you want to let audio, cdrom, floppy, video and plugdev (like USB device) open to all users in the DRBL client? If yes, we will add all the users to those device groups in the server and client.",
-   use_random_password => "Do you want to use *RANDOM* password for auto login accounts?",
-   enter_password_for_autologin_accounts => "Enter the password for auto login accounts.",
-   whats_client_autologin_passwd => "What's the password of auto login account for clients (It will not be echoed in the screen)?",
-   retype_autologin_passwd => "Retype the password (It will not be echoed in the screen).",
-   clonezilla_box_mode_for_client => "Do you want to use Clonezilla box mode only? If so, some functions about DRBL will be suppressed, and you will have an elegant mode to do clonezilla. Note! In this mode, the setting and config files of client will not be saved to the DRBL server! They just use once and will vanish after the machine shutdowns!",
-   clonezilla_box_mode_is_set => "Clonezilla box mode is set, an elegant mode for clonezilla is on the way!",
-   full_clonezilla_mode_is_set => "Full clonezilla mode is set!",
-   clonezilla_box_mode_not_set => "Clonezilla box mode is NOT set, you will have the full functions of DRBL box!",
-   no_clonezilla_in_system => "No Clonezilla is the system!",
-   class_c_IP_for_multicast_clonezilla => "If you want to use multicast clonezilla, you have to use private class C (192.168.*.*)! Otherwise the performance of multicast clone will be terribly worse!",
-   drbl_ssi_mode_for_client => "Do you want to use DRBL SSI (Single system image) mode? If yes, the loading and necessary disk space of server will be lighter. NOTE! In this mode, (1) The client machine memory at least 256 MB. (2) The setting and config files of client will not be saved to the DRBL server! They are just used once and will vanish after the machine shutdowns! Besides, if you modify any file in the template client (located in $drblroot), you have to run drbl-gen-ssi-files to create the template tarball in $drbl_common_root/drbl_ssi/. (3) If you want to provide some file to overwrite the setting in the template tarball when client boots, check $drbl_common_root/drbl_ssi/clients/00_README for more details.",
-   which_drbl_mode_for_client => "In the system, there are 3 modes for diskless linux services:\n[0] Full DRBL mode, every client has its own NFS based /etc and /var.\n[1] DRBL SSI (Single system image) mode, every client uses tmpfs based /etc and /var. In this mode, the loading and necessary disk space of server will be lighter. NOTE! (a) The client machine memory is recommended at least 256 MB. (b) The setting and config files of client will not be saved to the DRBL server! They are just used once and will vanish after the machine shutdowns! Besides, if you modify any file in the template client (located in $drblroot), you have to run drbl-gen-ssi-files to create the template tarball in $drbl_common_root/drbl_ssi/. (c) If you want to provide some file to overwrite the setting in the template tarball when client boots, check $drbl_common_root/drbl_ssi/clients/00_README for more details.\n[2] I do NOT want to provide diskless Linux service to client.\nWhich mode do you prefer?",
-   drbl_ssi_mode_is_set => "DRBL SSI mode is set, an elegant mode for DRBL is on the way!",
-   full_drbl_mode_is_set => "Full DRBL mode is chosen!",
-   no_drbl_mode_in_system => "No diskless Linux for client is the system.",
-   where_is_ocs_img_repo_dir => "When using clonezilla, which directory in this server you want to store the saved image (Please use absolute path, and do NOT assign it under /mnt/, /media/ or /tmp/)?",
-   not_allowed_ocs_img_repo_dir => "is not an allowed directory to save clonezilla images, please enter it again.",
-   drbl_server_as_NAT_server => "Do you want to let DRBL server as a NAT server? If not, your DRBL client will NOT be able to access Internat.",
-   drbl_server_is_NOT_NAT_server => "This DRBL server does NOT provide NAT service, so your DRBL client will NOT be able to access Internat.",
-   both_drbl_clonezilla_are_none => "Both drbl and clonezilla mode are assigned as not available, only very limited functions (such as netinstall, if you install those necessary files, and drbl-sl) are available in this system!",
-   only_one_network_card_in_system => "///WARNING/// Only one configured network card was found in this system, this is not recommended since this DRBL server will provide a DHCP service which might mess up your network environment if there is an existing DHCP service in the network environment where this network card is connected!!! It is recommended to use at least 2 network cards in this server to avoid this problem.",
-   are_you_sure_you_want_to_continue => "Are you sure you want to continue?",
+   change_kernel_notes => "Uyarı! Sunucuda çalışan kerneli değiştirmek istiyorsanız, ve kernelin NFS üzerinde udp veya tcp destekleyip desteklemediğinden emin değilseniz, \"drblpush -i\" komutunu çalıştırmanız boot hatalarından kaçınmak için daha iyi olacaktır!",
+   hint_for_answer => "İpucu!  yes/no seçeneği uygun olduğunda, varsayılan değer büyük harflidir, Örn. (y/N),  \"N\" defult değerdir,  \"Enter\" tuşuna basarsanız, \"N\" kullanmış olursunuz. Hangisini seçeceğinizden emin değilseniz, sadece \"Enter\" tuşuna basınız.",
+   hint_for_detect_MAC => "DRBL istemcilerinin statik ip adreslerini kullanmak isterseniz,  \"drblpush\" interaktif modda komutunu çalıştırmalısınız(-i seçeneğiyle) ve bu istemcilerin mac adreslerini toplar!",
+   illegal_char_in_MAC => "MAC adres dosyaları yasak karakterler içeriyor",
+   fix_wrong_MAC_file => "Lütfen MAC adres dosyasını kontrol et ve düzelt.",
+   unable_to_find_public_IP => "Bu sunucunun genel ip adresi bulunamadı.",
+   available_eth_ports => "Bu sunucudaki uygun ethernet portları",
+   is_not_in_the_lists => "listede değil",
+   enter_it_again => "Lütfen tekrar girin",
+   the_eth_port_you_choose_for_wan => "WAN bağlantısı için seçtiğiniz ethernet portu",
+   set_DBN_client_audio_plugdev_etc_open_to_all => "DRBL sunucusu üzerindeki tüm kullanıcılara ses, cdrom, floopy, video ve plugdev aygıtlarını kullanabilmeleri için izin vermek istiyor musunuz? Evetse, sunucu ve istemcide bu araç gruplarına bütün kullanıcıları ekleyeceğiz.",
+   use_random_password => "Auto login hesapları için *RANDOM* parola kullanmak ister misiniz?",
+   enter_password_for_autologin_accounts => " Auto login hesapları için parola giriniz",
+   whats_client_autologin_passwd => "İstemcilerin auto login parolaları nedir (ekranda gösterilmeyecek)?",
+   retype_autologin_passwd => "Parolayı tekrar yazınız(Ekranda gösterilmeyecek).",
+   clonezilla_box_mode_for_client => "Clonezillayı sadece box modda kullanmak ister misiniz? İstiyorsanız, DRBL hakkında bazı fonksiyonlar baskılanmış olacaklar ve clonezilla yapmak için elegant modunuz olacak. Uyarı! Bu modda, istemcinin ayar ve yapılandırma dosyaları DRBL sunucuya kaydedilmeyecek! Bir kere kullanılacaklar ve makine baştan başlatıldığında temizlenecekler!",
+   clonezilla_box_mode_is_set => " Clonezilla box modu ayarlandığında, elegant mod yolda demektir!",
+   full_clonezilla_mode_is_set => "Full clonezila modu ayarlı!",
+   clonezilla_box_mode_not_set => "Clonezilla box moda ayarlı değil, DRBL box tam fonksiyonlarına sahip olacaksınız!",
+   no_clonezilla_in_system => "Clonezilla bir sistem değildir!",
+   class_c_IP_for_multicast_clonezilla => "Multicast clonezilla kullanmak istiyorsanız, özel ip sınıfı C sınıfını kullanmak zorundasınız (192.168.*.*)! Öte yandan multicast klonun performası çok kötü olacaktır!",
+   drbl_ssi_mode_for_client => "DRBL SSI(Tek Sistem imajı) modunu kullanmak ister misiniz? Evetse, sunucunun yüklenmesi ve gerekli disk alanı daha açık olacak. Uyarı! Bu modda, (1) İstemci makine hafızası en az 256 mb olmalı. (2) İstemcinin ayar ve yapılandırma dosyaları DRBL sunucusu üzerine kaydedilmeyecek! Sadece bir kere kullanılacaklar ve makine baştan başlatıldığında silenecekler! Bunun yanında, eğer template istemcideki her dosyayı($drblroot içinde yer alır) düzenlerseniz, drbl-gen-ssi-files komutunu $drbl_common_root/drbl_ssi/ içinde tarball template oluşturmak için çalıştırmak zorundasınız. (3) İstemci ön yüklendiğinde template tarball içindeki ayarlamaların üzerine yazmak için bazı dosyalar sağlanmasını isterseniz, daha fazla bilgi için $drbl_common_root/drbl_ssi/clients/00_README dosyasını kontrol ediniz.",
+   which_drbl_mode_for_client => "Sistemde disksiz linux hizmetleri için 3 mod var:\n[0] Full DRBL mod, her istemci kendi NFS si üzerinde /etc ve /var dizinlerine sahiptir.\n[1] DRBL SSI (Single system image) mod, her istemci tmpfs temelli /etc ve /var dizinlerini kullanır. Bu modda, yükleme ve sunucu için gerekli disk alanı daha açık olacaktır. UYARI! (a) İstemci makine için en az 256 mb hafıza önerilir. (b) İstemcinin yapılandırma ve ayar dosyaları DRBL sunucu üzerinde kaydedilmeyecek! Bir kere kullanılacakla makine baştan başlatıldığında silinecekler! Bunun yanında, eğer template istemcideki her dosyayı($drblroot içinde yer alır) düzenlerseniz, drbl-gen-ssi-files komutunu $drbl_common_root/drbl_ssi/ içinde tarball template oluşturmak için çalıştırmak zorundasınız. (c) İstemci ön yüklendiğinde template tarball içindeki ayarlamaların üzerine yazmak için bazı dosyalar sağlanmasını isterseniz, daha fazla bilgi için $drbl_common_root/drbl_ssi/clients/00_README dosyasını kontrol ediniz.\n[2] İstemciye disksiz Linux hizmeti sağlamak istemiyorum.\nHangi modu tercih edersiniz?",
+   drbl_ssi_mode_is_set => "DRBL SSI mod ayarlandığnda, DRBL için bir elegant mod yolda demektir!",
+   full_drbl_mode_is_set => "Full DRBL mod seçildi!",
+   no_drbl_mode_in_system => "İstemci için disksiz linux sistem değil.",
+   where_is_ocs_img_repo_dir => "clonezilla kullandığınızda, kaydedilmiş imajı sunucudaki hangi dizinde saklamak istersiniz (Lütfen belirli bir yol belirtiniz, bunu /mnt/, /media/ veya /tmp/ altına atamayınız)?",
+   not_allowed_ocs_img_repo_dir => "clonezilla imajlarınızı kaydetmek için izin verilen bir dizin değil, lütfen tekrar deneyin.",
+   drbl_server_as_NAT_server => "DRBL sunucunun bir NAT sunucu gibi çalışmasına izin veriyor musunuz? Vermiyorsanız, DRBL istemciniz internata erişemeyecek.",
+   drbl_server_is_NOT_NAT_server => "Bu DRBL sunucu NAT hizmeti sağlamıyor, bu yüzden DRBL istemciniz internata erişemeyecek.",
+   both_drbl_clonezilla_are_none => "drbl ve clonezilla modunun her ikiside uygun bir şekilde atanmadı, bu sistemde sadece limitli fonksiyonlar(netinstall ve drbl-sl gibi) kullanılabilir!",
+   only_one_network_card_in_system => "///UYARI/// Sisteminizde sadece bir adet yapılandırılmış network kartı bulundu, Network kartın bağlı olduğu network ortamında bir DHCP servisi varsa, DRBL sunucu sizin network ortamınızı karıştıran bir DHCP servisi sağlayacağından dolayı bu önerilmez!!! Bu problemden kaçınmak için en az iki network kartı önerilir.",
+   are_you_sure_you_want_to_continue => "Devam etmek istediğinize emin misiniz?",
    # Tag on 2010/12/13
-   which_clonezilla_mode_for_client => "In the system, there are 4 modes available for clonezilla:\n[0] Full Clonezilla mode, every client has its own NFS based /etc and /var.\n[1] Clonezilla box mode, every client uses tmpfs based /etc and /var. In this mode, the loading and necessary disk space of server will be lighter than that in Full Clonezilla mode. Note! In Clonezilla box mode, the setting and config files of client will not be saved to the DRBL server! They just use once and will vanish after the machine shutdowns!\n[2] I do NOT want clonezilla.\n[3] Use Clonezilla live as the OS (Operating System) of clients (Testing).\nWhich mode do you prefer?",
-   clonezilla_live_mode_is_set => "Use Clonezilla live as the OS (Operating System) of clients when running Clonezilla job.",
-   which_clonezilla_live_branch => "What's the Clonezilla live release branch for the clients?\n[0]: stable (Debian-based)\n[1]: testing (Debian-based)\n[2]: alternative stable (Ubuntu-based)\n[3]: alternative testing (Ubuntu-based)\nIf unsure, choose [2]: alternative stable.",
-   which_live_client_cpu_mode => "What's the CPU arch for the clients when running Clonezilla job with Clonezilla live?\n[0]: i486\n[1]: i686\n[2]: amd64\nIf unsure, choose i486.",
-   which_live_client_cpu_mode_for_ubuntu => "What's the CPU arch for the clients when running Clonezilla job with Clonezilla live?\n[0]: i386\n[1]: amd64\nIf unsure, choose i386.",
-   live_client_branch_set=> "The Clonezilla live branch is chosen as",
-   live_client_cpu_arch_is_set => "The CPU arch for clients when running Clonezilla job",
+   which_clonezilla_mode_for_client => "Sistemde, clonezilla için uygun 4 mod var:\n[0] Full Clonezilla mod, her istemci kendi NFS tabanlı /etc ve /var dizinlerine sahiptir.\n[1] Clonezilla box mod, her istemci tmpfs temelli /etc ve /var dizinlerini kullanır. In this mode, Bu modda, yükleme ve sunucu için gerekli disk alanı Full moddan daha açık olacaktır. Uyarı! Clonezilla box modda,istemcinin yapılandırma ve ayar dosyaları DRBL sunucu üzerinde kaydedilmeyecek! Bir kere kullanılacakla makine baştan başlatıldığında silinecekler!\n[2] Clonezilla istemiyorum.\n[3] Clonezilla live istemcinin bir işletim sistemi gibi kullanılsın (Test ediliyor).\nHangi modu tercih edersiniz?",
+   clonezilla_live_mode_is_set => " Clonezilla job çalışırkekn, Clonezilla live istemcinin işletim sistemi gibi çalışsın.",
+   which_clonezilla_live_branch => "İstemci için hangi Clonezilla live kolunu seçersiniz?\n[0]: stable (Debian-tabanlı)\n[1]: test (Debian-tabanlı)\n[2]: alternatif stable (Ubuntu-tabanlı)\n[3]: alternatif test (Ubuntu-tabanlı)\nEmin değilseniz, [2]: alternatif stable seçeneğini seçin.",
+   which_live_client_cpu_mode => "Clonezilla live ile birlikte Clonezilla job çalıştığında istemciler için kullanılacak işlemci mimarisi nedir?\n[0]: i486\n[1]: i686\n[2]: amd64\nEmin değilseniz, i486 seçin.",
+   which_live_client_cpu_mode_for_ubuntu => "Clonezilla live ile birlikte Clonezilla job çalıştığında istemciler için kullanılacak işlemci mimarisi nedir?\n[0]: i386\n[1]: amd64\nEmin değilseniz, i386 seçin.",
+   live_client_branch_set=> "Clonezilla live dalı seçildi",
+   live_client_cpu_arch_is_set => "İstemci için seçilen işlemci mimarisi",
    mark_the_end_of_lang =>"."
    );
