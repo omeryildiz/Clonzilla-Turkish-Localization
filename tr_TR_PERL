@@ -1,5 +1,5 @@
 #!/usr/bin/perl -T
-# Written by Ömer YILDIZ <oyildiz _at_ linux org tr> for DRBL
+# Translated by Ömer YILDIZ <oyildiz _at_ linux org tr> for DRBL
 # License: GPL
 #
 
@@ -48,7 +48,7 @@ $lang_charset = 'iso-8859-1';
 %lang_word =
    (
    please_enter => "Lütfen giriniz",
-   to_deploy_them => "onları yerleştirmek",
+   to_deploy_them => "yerleştir",
    root_passwd => "root\'s parolası",
    initial_digit => "ilk basamak",
    unable_to_find_the => "bulamadı",
@@ -89,13 +89,13 @@ $lang_charset = 'iso-8859-1';
    saved_mac_address_files_in_etc => "Bu dosyalar $drbl_syscfg dizininde kaydedildi.",
    collect_MAC_prompt => 
           "Şimdi istemcilerin MAC adreslerini toplayabiliriz!\n".
-          "If you want to let the DHCP service in DRBL server offer same IP address to client every time when client boot, and you never did this procedure, you should do it now!\n".
-          "If you already have those MAC addresses of clients, you can put them into different group files (These files number is the same number of networks cards for DRBL service). In this case, you can skip this step.\n".
-          "This step helps you to record the MAC addresses of clients, then divide them into different groups. It will save your time and reduce the typos.\n".
-	  "The MAC addresses will be recorded turn by turn according to the boot of clients,\n".
-	  "and they will be put into different files according to the network card in server, file name will be like macadr-eth1.txt, macadr-eth2.txt... You can find them in directory $drbl_syscfg.\n".
-	  "Please boot the clients by order, make sure they boot from etherboot or PXE!\n". 
-          "Do you want to collect them?",
+          "İstemci boot edildiğinde DRBL sunucudaki DHCP servisinin her zaman aynı ip adresini sunmasını istiyorsanız ve bu prosedürü yapmadıysanız, şimdi yapmalısınız!\n".
+          "Eğer istemcilerin MAC adreslerine sahipseniz, onları farklı grup dosyalarına koyabilirsiniz (DRBL hizmeti için bu dosya numaraları network kartlarının numarasıyla aynıdır.). Bu durumda, bu adımı atlayabilirsiniz.\n".
+          "Bu adım istemcilerin MAC adresini kaydetmenize yardım eder, daha sonra onları farklı gruplara ayırır. Bu size zaman kazandıracak ve tiplere indirgeyecek.\n".
+	  "MAC adresleri istemcilerin boot edilmesine göre sırayla kaydedilmiş olacaklar,\n".
+	  "ve sunucudaki network kartına göre farklı dosyalara dönüştürülecekler, dosya adı macadr-eth1.txt, macadr-eth2.txt gibi olacak... Onları $drbl_syscfg dizini içinde bulabilirisiniz.\n".
+     "Lütfen istemcileri sırayla boot ediniz, etherboot veya PXE den boot edildiklerine emin olun!\n". 
+          "Onları toplamak istiyor musunuz?",
    ok_let_do_it => 'Tamam! Hadi yap şunu!',
    you_are_not_root => 'Root değilsin',
    ok_let_continue => 'TAMAM! Hadi devam et...',
