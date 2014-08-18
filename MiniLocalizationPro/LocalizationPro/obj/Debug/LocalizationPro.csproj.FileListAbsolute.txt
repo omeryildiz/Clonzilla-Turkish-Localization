@@ -1,0 +1,9 @@
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\bin\Debug\LocalizationPro.exe.config
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\bin\Debug\LocalizationPro.exe
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\bin\Debug\LocalizationPro.pdb
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\obj\Debug\LocalizationPro.csprojResolveAssemblyReference.cache
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\obj\Debug\LocalizationPro.Form1.resources
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\obj\Debug\LocalizationPro.Properties.Resources.resources
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\obj\Debug\LocalizationPro.csproj.GenerateResource.Cache
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\obj\Debug\LocalizationPro.exe
+c:\users\ömer\documents\visual studio 2012\Projects\LocalizationPro\LocalizationPro\obj\Debug\LocalizationPro.pdb
