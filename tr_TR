@@ -758,9 +758,9 @@ msg_ocs_onthefly_param_e2='sfdisk, EDD(grub olmayan boot loader için) den harrd
 msg_press_space_to_mark_selection='Seçiminizi yapmak için space tuşunu kullanınız. Seçim yapıldığında bir aterisk işareti gösterilir.'
 msg_see_above_notice='Uyarı! Yukarıya dikkat et!'
 # Tag on 2009/04/10
-msg_select_beginner_or_expert_mode="Choose the mode to run the following wizard about advanced parameters"
-msg_beginner_mode="Beginner mode: Accept the default options"
-msg_expert_mode="Expert mode: Choose your own options"
+msg_select_beginner_or_expert_mode="Aşağıdaki özel parametrelerle ilgili sihirbazlardan birini çalıştırmak için seçiniz  "
+msg_beginner_mode="Acemi modu: Varsayılan seçim"
+msg_expert_mode="Uzman modu: Kendi seçimlerinizi oluşturun"
 msg_ocs_param_ntfs_ok='NTFS gömülü doğrulamayı geç, bad sektörler olsa bile(sadece ntfsclone içinde)'
 msg_ocs_param_nogui='Sadece text çıkışı kullan, TUI/GUI kullanma'
 msg_ocs_onthefly_param_nogui='Sadece metin çıkışı kullan, çıkış olarak TUI/GUI kullanma'
