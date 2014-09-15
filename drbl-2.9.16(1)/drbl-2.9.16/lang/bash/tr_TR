@@ -349,7 +349,7 @@ msg_clients_time_to_wait='Klonlamaya başlamak için maksimum zaman&istemcilerin
 msg_how_many_clients_to_restore='Kurtarılacak kaç istemci var?'
 msg_input_name_to_save_the_img='Kaydedilecek imajda kullanmak için bir isim girin'
 msg_time_to_wait_sec='Beklemek için minimum zaman(Sec) (İlk istemci bağlandığında sayaç başlar)'
-msg_max_time_to_wait_sec="Maximum time to wait (Sec) (The count starts when the first client connects). When not enough clients have connected (but at least one) start the process anyways after [this assigned seconds] since first client connects. (Better >= $SLEEP_TIME_AFTER_PART_CLONED)"
+msg_max_time_to_wait_sec="Maksimum bekleme zamanı (Sec) (İlk istemci bağlandığında sayaç başlar). Yeterli sayıda istemci bağlanmadığında (en az bir tane bağlanmış olmalı) her ne olursa olsun ilk istemci bağlı olduğundan süreç başlar. (Better >= $SLEEP_TIME_AFTER_PART_CLONED)"
 msg_you_must_input_filename='Bir isim girmelisiniz'
 msg_you_must_input_legal_filename="Uygun imaj adı girmek zorundasınız(sadece alfabetik, sayısal, _, - ve . içerebilir)"
 msg_you_must_input_partition='Bir bölüm girmelisiniz'
@@ -474,7 +474,7 @@ msg_do_not_reset_autologin_home_dir='autologin hesaplarının ev dizinlerini res
 msg_created_autologin_ID_passwd_file="Oluşturulan id ve parolalar $AUTO_LOGIN_ID_PASSWD içindedir.Bu dosyası güvenli bir yere koymak iyi olabilir, daha sonra $AUTO_LOGIN_ID_PASSWD silin."
 msg_drbl_clonezilla_switch='DRBL ve Clonezilla mekanizmasını değiştir'
 msg_drbl_mode_switch='DRBL mekanizmasını değiştir'
-msg_drbl_mode_switch_long="3 modes for diskless linux services:\n[0] Full DRBL mode, every client has its own NFS based /etc and /var.\n[1] DRBL SSI (Single system image) mode, every client uses tmpfs based /etc and /var. In this mode, the loading and necessary disk space of the server will be lighter. NOTE! (a) The client machine memory is recommended at least 256 MB. (b) The settings and config files of the client will not be saved to the DRBL server! They are just used once and will vanish after the machine shutdowns! Besides, if you modify any file in the template client (located in $drblroot), you have to run drbl-gen-ssi-files to create the template tarball in $drbl_common_root/drbl_ssi/.\n[2] I do NOT want to provide diskless Linux service to the client.\nWhich mode do you prefer?"
+msg_drbl_mode_switch_long="Disksiz linux servisi için üç mod:\n[0] Full mode, her istemci kendi NFS tabanlı /etc ve /var dosyalarına sahiptir. \n[1] DRBL SSI (Single system image) mod, her istemci tmpfs tabanlı /etc ve /var kullanır. In this mode, the loading and necessary disk space of the server will be lighter. NOTE! (a) İstemci makine hafızası en az 256 MB olmalıdır. (b) Not! Clonezilla box modda, ayar ve yapılandırma dosyaları DRBL sunucuda kaydedilmeyecektir! Sadece bir kere kullanılacaklar ve makine baştan başlatıldıktan sonra silinecekler! Ayrıca, if you modify any file in the template client (located in $drblroot), you have to run drbl-gen-ssi-files to create the template tarball in $drbl_common_root/drbl_ssi/.\n[2] I do NOT want to provide diskless Linux service to the client.\nWhich mode do you prefer?"
 msg_drbl_mode_0='Full DRBL modu kullan'
 msg_drbl_mode_1='DRBL SSI modu kullan'
 msg_drbl_mode_2='Disksiz linux servisi sağlama'
