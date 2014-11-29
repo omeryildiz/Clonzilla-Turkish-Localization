@@ -927,7 +927,7 @@ msg_failed_to_convert_new_compression_as_another_image='Imajın yeni sıkıştı
 msg_img_created_time='Imaj oluşturuldu'
 # Tag on 2014/05/26
 msg_kvm_started_for_conversion='Şimdi bir sanal makine(KVM) dönüştürülmeye başlanacak ve işlem gösterilecek.'
-msg_do_not_panic_for_booting_msg_of_kvm='///NOTE/// DO NOT PANIC when you see booting message! The ouput is _NOT_ for this real, host machine!'
+msg_do_not_panic_for_booting_msg_of_kvm='///UYARI/// Ön yükleme mesajı gördüğünüzde PANİKLEMEYİN! Çıkışlar gerçek host makine için değildir!'
 msg_only_output_for_kvm_no_input='Sadece sanal makinenin çıkışı var ve hiç giriş yok. Öyleyse sanal makinede fare ve klavye kullanılamaz.'
 msg_press_ctrl_c_to_quit_tail='Görüntülenen programdan(kuyruktan) çıkmak için Ctrl-C tuşlarına basabilirsiniz.'
 msg_choose_if_create_vmdk_format='Varsayılan olarak sadece qcow2 sanal disk formatı oluşturulmuş olacak. Eğer vmdk formatı (compat6) oluşturmak istiyorsanız,"-c"yi seçin'
