@@ -765,7 +765,7 @@ msg_ocs_param_ntfs_ok='NTFS gömülü doğrulamayı geç, bad sektörler olsa bi
 msg_ocs_param_nogui='Sadece text çıkışı kullan, TUI/GUI kullanma'
 msg_ocs_onthefly_param_nogui='Sadece metin çıkışı kullan, çıkış olarak TUI/GUI kullanma'
 msg_ocs_param_z4='Izma sıkıştırma (en yavaş fakat en küçük imaj dosyası, açılması bzip2 den hızlıdır)'
-msg_warning_mount_hfsplus_writable='Uyarı! GNU/Linux üzerinde HFS+ yazılabilir bölümleme tablosu yerleştirmek risklidir! Linux HFS+ sürücü günlük kayıt yapmaz. Önemli diskle böyle yapmak önerilmez.'
+msg_warning_mount_hfsplus_writable='Uyarı! GNU/Linux üzerinde HFS+ yazılabilir bölümleme tablosu yerleştirmek risklidir! Linux HFS+ sürücü günlük kayıt yapmaz. Önemli! diskle böyle yapmak önerilmez.'
 msg_do_u_want_to_do_it_again='Tekrar yapmak ister misiniz?'
 msg_you_must_choose_a_dev='Bir cihaz seçmelisiniz!'
 msg_mode="Mod"
@@ -926,14 +926,14 @@ msg_failed_to_convert_new_compression_as_another_image='Imajın yeni sıkıştı
 # Tag on 2014/03/17
 msg_img_created_time='Imaj oluşturuldu'
 # Tag on 2014/05/26
-msg_kvm_started_for_conversion='Now a virtual machine (KVM) is going to be started to do the conversion, and the process will be shown.'
+msg_kvm_started_for_conversion='Şimdi bir sanal makine(KVM) dönüştürülmeye başlanacak ve işlem gösterilecek.'
 msg_do_not_panic_for_booting_msg_of_kvm='///NOTE/// DO NOT PANIC when you see booting message! The ouput is _NOT_ for this real, host machine!'
-msg_only_output_for_kvm_no_input='It is only ouput of virtual machine, and there is no any input. Therefore the keyboad and mouse can not be used to control the virtual machine.'
-msg_press_ctrl_c_to_quit_tail='You can press Ctrl-C to quit the viewing program (tail).'
-msg_choose_if_create_vmdk_format='By default the qcow2 virtual disk format will be created only. If you want to create vmdk format (compat6), choose "-c"'
-msg_not_create_vmdk_format='Do not create vmdk format, either'
-msg_create_vmdk_format='Create vmdk format, too'
-msg_failed_to_start_kvm_to_convert='Failed to start kvm to convert the image!'
+msg_only_output_for_kvm_no_input='Sadece sanal makinenin çıkışı var ve hiç giriş yok. Öyleyse sanal makinede fare ve klavye kullanılamaz.'
+msg_press_ctrl_c_to_quit_tail='Görüntülenen programdan(kuyruktan) çıkmak için Ctrl-C tuşlarına basabilirsiniz.'
+msg_choose_if_create_vmdk_format='Varsayılan olarak sadece qcow2 sanal disk formatı oluşturulmuş olacak. Eğer vmdk formatı (compat6) oluşturmak istiyorsanız,"-c"yi seçin'
+msg_not_create_vmdk_format='vmdk formatı oluşturma'
+msg_create_vmdk_format='vdmk formtı da oluştur'
+msg_failed_to_start_kvm_to_convert='Hata, kvm imaja dönüştürmeye başlayamadı!'
 # Tag on 2014/06/21
-msg_this_part_in_the_img_is_broken='The image of this partition is broken'
-msg_this_part_in_the_img_is_ok='The image of this partition is restorable'
+msg_this_part_in_the_img_is_broken='Bu bölümün imajı bozuk'
+msg_this_part_in_the_img_is_ok='Bu bölümün imajı düzeltilebilir'
