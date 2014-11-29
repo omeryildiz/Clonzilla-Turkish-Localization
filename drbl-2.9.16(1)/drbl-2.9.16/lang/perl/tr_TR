@@ -109,7 +109,7 @@ $lang_charset = 'iso-8859-1';
    do_you_want_to_continue => "Devam etmek istiyor musunuz?",
    reenter_or_accept => "tekrar enter tuşuna bas, veya bu değeri kabul etmek için herhangi bir tuşa bas ve devam et!",
    filename_you_set => "Ayarladığınız dosya adı",
-   by_MAC_file => "By the MAC address file you set, the IP addresses for the clients connected to DRBL server's ethernet network interface",
+   by_MAC_file => "MAC adres dosyasını ayarlamanızla birlikte, DRBL sunucusunun ethernet ağ arayüzüne istemcilerin ip adresileri bağlandı.",
    let_restart_it_again => "Tamam! hadi onu tekrar baştan başlat!",
    layout_for_DRBL => "Sizin DRBL ortamınız için düzen:",
    swap_prompt =>
@@ -159,14 +159,14 @@ $lang_charset = 'iso-8859-1';
    but_you_will_see_errors => "Çok fazla hata mesajı göreceksiniz...!!!",
    smart_decision => "Tamam, akıllıca bir karar verdiniz, Şimdi çıkıyorum!",
    finished_searching_installed_drbl_packages => "DRBL sunucu için kurulmuş paketleri aramyı bitirdi.",
-   note_for_keep_client_setting => "Note! You are trying to keep the setting of DRBL clients if they exist, sometimes DRBL clients will go wrong when you finish this script! If so, rebooting those DRBL clients should make them work!",
+   note_for_keep_client_setting => "Uyarı! DRBL istemcilerinin ayarlarını korumayı deniyorsunuz eğer mevcutsa DRBL istemcileri script bittiğinde bazen hataya gidebilir! Bu durumda, DRBL istemcilerini baştan başlatmak çalışmalarını sağlayabilir!",
    press_enter_to_continue => "Devam etmek için Enter tuşuna basınız... ",
    no_deploy_prompt =>
 	      "Bütün ayar dosyaları bu çalışma dizininde oluşturulur,\n".
 	      "ama sisteme yerleştirilmezler! \n".
 	      "Eğer sisteme yerleştirmek istiyorsanız, \"-n\" veya \"--no_deploy\" seçeneklerini kullanmayın",
    ready_to_deploy =>
-	      "We are now ready to deploy the files to system! Dosyalarınızı sisteme yerleştirmek için hazırız \n".
+	      "Dosyalarınızı sisteme yerleştirmek için hazırız \n".
 	      "Devam etmek istiyor musunuz?",
    overwrite_firewall_rule => "Uyarı! Eğer devam ederseniz firewall kurallarınız ayarlama sırasında silinecektir!",
    backup_firewall_rule => "Orjinal kurallar iptables.drblsave dosyası olarak, sistem ayar dosyası içine (/etc/sysconfig veya /etc/default) yedeklenecektir.",
